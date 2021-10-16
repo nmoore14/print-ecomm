@@ -12,7 +12,12 @@
                 "title": "Products",
                 "path": "/admin/products",
             },
+            {
+                "title": "Products List",
+                "path": "/admin/products/productsList",
+            },
         ]);
     });
 </script>
-<h1>Welcome to Products Page! I don't know how you got here</h1>
+
+<h1>This the products table page</h1>

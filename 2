@@ -15,7 +15,7 @@
         for (let i = 0; i < menuItems.length; i ++) {
             if (document.getElementById(menuItems[i].id)) {
                 document.getElementById(menuItems[i].id).classList.add("hovered-bordered");
-                document.getElementById(menuItems[i].id).classList.remove("active");
+                document.getElementById(menuItems[i].id).classList.remove("bordered");
             }
         }
     }
@@ -25,7 +25,7 @@
         const parentId = event.toElement.parentElement.id;
 
         document.getElementById(parentId).classList.remove("hovered-bordered");
-        document.getElementById(parentId).classList.add("active");
+        document.getElementById(parentId).classList.add("bordered");
     };
 </script>
 
@@ -45,7 +45,7 @@
                 <ul class="menu py-4 shadow-lg bg-base-100 rounded" id="side-menu">
                     <li class="menu-title">
                         <span>
-                            <Icon src={item.icon} size="12" class="mr-1" />
+                            <Icon src={item.icon} size="12" class="mr-1"/>
                             {item.title}
                         </span>
                     </li>
