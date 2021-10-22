@@ -39,6 +39,7 @@ const menuItems = [
             },
             {
                 "title": "Cusotmers",
+                "path": "/admin/customers/customersList",
             },
         ]
     },

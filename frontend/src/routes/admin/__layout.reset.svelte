@@ -20,23 +20,23 @@
             return;
         }
 
-        admin.setAttribute("data-theme", "cupcake");
+        admin.setAttribute("data-theme", "corporate");
         return;
     };
 </script>
 
-<div class="grid grid-cols-5 w-full h-screen bg-base-100" id="admin" data-theme="cupcake">
-    <div class="flex flex-col h-full px-8 pt-8 items-center bg-base-200">
+<div class="grid grid-cols-5 gap-0 w-full h-screen overflow-y-scroll bg-base-100" id="admin" data-theme="corporate">
+    <div class="fixed flex flex-col h-full px-8 pt-8 items-center bg-base-200">
         <h1 class="font-sans text-3xl text-base-content">Interstate Graphics, Inc.</h1>
         <div class="flex flex-row nowrap p-1 my-2 justify-center items-center bg-primary rounded-full">
-            <Icon src={Sun} size="14" class="mr-1 text-base-content" />
+            <Icon src={Sun} size="14" class="mr-1 text-white" />
             <ThemeToggle on:checkUpdate={handleThemeUpdate}/>
-            <Icon src={Moon} size="14" class="ml-1 text-base-content" />
+            <Icon src={Moon} size="14" class="ml-1 text-white" />
         </div>
         <Menu />
     </div>
 
-    <main class="flex flex-col nowrap w-full h-full col-span-4">
+    <main class="relative flex flex-col nowrap w-full h-full col-start-2 col-span-4 pr-3">
         <Breadcrumb />
         <slot></slot>
     </main>

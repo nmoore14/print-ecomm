@@ -15,4 +15,4 @@
         ]);
     });
 </script>
-<h1>Welcome to Products Page! I don't know how you got here</h1>
+<h1 class="text-base-content">Welcome to Products Page! I don't know how you got here</h1>

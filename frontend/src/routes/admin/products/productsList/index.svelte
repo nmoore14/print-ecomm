@@ -20,4 +20,4 @@
     });
 </script>
 
-<h1>This the products table page</h1>
+<h1 class="text-base-content">This the products table page</h1>
