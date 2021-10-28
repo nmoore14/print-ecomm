@@ -1,4 +1,6 @@
 <script>
+    export const ssr = false;
+
     import { onMount } from 'svelte';
     import { themeChange } from 'theme-change';
     import { Sun, Moon } from 'svelte-hero-icons';

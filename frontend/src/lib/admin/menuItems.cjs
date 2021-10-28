@@ -55,6 +55,7 @@ const menuItems = [
         "submenu": [
             {
                 "title": "Employees",
+                "path": "/admin/employees",
             },
             {
                 "title": "Site",
