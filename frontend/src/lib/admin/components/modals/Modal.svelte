@@ -4,22 +4,14 @@
     export let form;
 </script>
 
-<div id="my-modal" class="modal {$isOpen ? 'isOpen': ''}">
-    <div class="modal-box">
-        <svelte:component this={form} />
+<input type="checkbox" id="my-modal-checkbox" class="modal-toggle" checked={$isOpen ? 'checked' : '' }>
+<div id="my-modal" class="w-full modal" on:click|self={ isOpen.toggle }>
+    <div class="modal-box max-w-full w-4/5">
+        <div class="flex flex-row nowrap w-full justify-end items-center">
+            <button class="btn btn-sm bg-base-200 hover:bg-warning" on:click={ isOpen.toggle }>
+                <p class="text-base-content">CLOSE</p>
+            </button> 
+        </div>
+        <svelte:component this={ form }/>
     </div>
 </div>
-
-<style>
-    #my-modal {
-        display: none;
-        position: fixed;
-        z-index: 9999;
-        top: 0;
-        left: 0;
-    }
-
-    .isOpen {
-        display: flex;
-    }
-</style>
